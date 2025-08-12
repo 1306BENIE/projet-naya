@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  #print-section, 
+  #print-section * {
+    visibility: visible;
+  }
+  
+  #print-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: white;
+    box-shadow: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transform: none;
+  }
+  
+  .print-hidden {
+    display: none !important;
+  }
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+/* Dans votre fichier CSS global */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 8px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: #c7d2fe;
+  border-radius: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background-color: #f1f5f9;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+  
+  .md\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .text-center-mobile {
+    text-align: center;
+  }
+  
+  .p-6 {
+    padding: 1.5rem;
+  }
+  
+  .py-20 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .flex-col-mobile {
+    flex-direction: column;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-xl {
+    font-size: 1.1rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.3rem;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .py-3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .rounded-2xl {
+    border-radius: 1rem;
+  }
+}
+/* Ajouter à la fin du fichier */
+.EspaceClient-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.EspaceClient-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.EspaceClient-exit {
+  opacity: 1;
+}
+
+.EspaceClient-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 300ms, transform 300ms;
+}
