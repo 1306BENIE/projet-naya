@@ -9,6 +9,3 @@ const destinationSchema = new mongoose.Schema({
 });
 
 export default mongoose.model('Destination', destinationSchema);
-
-
-
