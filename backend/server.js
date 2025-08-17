@@ -63,6 +63,9 @@ const allowedOrigins = [
   process.env.FRONTEND_URL || "http://localhost:5173",
   "http://localhost:3000",
   "https://votre-domaine.com",
+  "https://projet-naya.vercel.app",
+  "https://projet-naya-git-main-1306benie.vercel.app",
+  "https://projet-naya-1306benie.vercel.app",
 ];
 
 const corsOptions = {
