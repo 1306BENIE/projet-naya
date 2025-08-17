@@ -15,6 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "express-validator": "^7.2.1",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^8.15.1",
     "multer": "^2.0.1"
@@ -22,7 +23,12 @@
   "devDependencies": {
     "nodemon": "^3.0.0"
   },
-  "keywords": ["livraison", "api", "mongodb", "express"],
+  "keywords": [
+    "livraison",
+    "api",
+    "mongodb",
+    "express"
+  ],
   "author": "NAYA Team",
   "license": "ISC"
 }
